@@ -1,7 +1,6 @@
 import Head from 'next/head';
-import styles from '@/styles/Home.module.css'
-
-const posts = [{title: "Testing"}]
+import { PostCard, Categories, PostWidget } from '@/components';
+const posts = [{ title: "Testing" }]
 
 export default function Home() {
   return (
@@ -12,13 +11,13 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-8 col-span-1">
             {posts.map((post, index) => (
-              <div>{post.title}</div>
+              <PostCard key={index} />
             ))}
           </div>
           <div className="lg:col-span-4 col-span-1">
             <div className="lg:sticky relative top-8">
-              <div>Post Widget</div>
-              <div>Categories</div>
+              <PostWidget />
+              <Categories />
             </div>
           </div>
         </div>
