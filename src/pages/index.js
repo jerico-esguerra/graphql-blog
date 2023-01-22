@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { PostCard, Categories, PostWidget } from '@/components';
 import {getPosts} from "../services"
 
-export default function Home({ posts }) {
+export default function Home({posts}) {
   return (
     <>
       <Head><title>Memories</title></Head>
