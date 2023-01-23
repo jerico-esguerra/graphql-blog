@@ -1,38 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Blog App
+
+## Overview
+
+A fully responsive headless CMS and GraphQL blog application. The functionalities of the application includes the presentation of featured and recent posts, categories, full markdown articles, author information, comments, and much more!
+
+## Key Topics
+
+Built using modern technologies:
+
+* ReactJS
+* NextJS
+* Tailwind CSS
+* GraphQL
+* GraphCMS (aka. Hygraph)
 
 ## Getting Started
 
-First, run the development server:
+1. Clone this repository (e.g., using `create-next-app`)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+	`npx create-next-app -e https://github.com/jerico-esguerra/graphql-blog-app`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Create schema’s/models in Hygraph (Asset, Author, Category, Comment, Post)
+3. Create .env file containing your own variables (reference .env.example)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Deployment
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Create a new [Github](https://github.com/) repository that contains your blog application code.
+2. Login to [Vercel](https://vercel.com/login) with Github and import your Git repository.
+3. Configure project by adding your environment variables.
+4. DEPLOY!
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- - -
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+© 2023 Jerico Esguerra. All Rights Reserved.
